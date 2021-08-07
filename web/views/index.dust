@@ -1,0 +1,37 @@
+</br>
+
+<div id="state" data-state="index"></div>
+
+		<div id="definition" style="margin-bottom: 90px;">
+			<a><strong>Ethermediary</strong> is an Ethereum based <strong>smart contract</strong>.</br>It allows you to <strong>safely trade</strong> objects and services for <strong>Ether</strong>.
+				</br></br>
+				The <strong>Ethermediary</strong> smart contract acts as a <strong>safe and trustless</br>third party</strong> which garanties the seller to be paid, and the buyer&nbsp;
+				to receive the object or service.
+			</a>
+		</div>
+
+	<form id="mForm">
+
+		<div id="button_menu">
+				<div id="new_deal_def">
+					<div id="new_deal_color" onmouseover="blob('new_deal_color')">
+						<button class="button_left" type="button"
+						onmouseover="color_over('button_left')"
+						onmouseleave="color_leave('button_left')"
+						onclick="onClick('newDeal1Content');">New Deal</button>
+					</div>
+			  </div>
+
+			<div style="margin-left: 250px; display: inline-block; float: left;"></div>
+
+				<div id="get_deal_def" >
+					<div id="get_deal_color" onmouseover="blob('get_deal_color')">
+						<button class="button_right" type="button"
+						onmouseover="color_over('button_right')"
+						onmouseleave="color_leave('button_right')"
+						onclick="onClick('getDeal');">Get Deal</button>
+					</div>
+	      </div>
+		</div>
+
+	</form>

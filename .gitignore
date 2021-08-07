@@ -1,0 +1,6 @@
+node_modules/
+chain/
+log/
+mailCredential.json
+.env
+package-lock.json

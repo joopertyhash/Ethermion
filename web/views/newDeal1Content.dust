@@ -1,0 +1,65 @@
+<div id="validation" style="display:none">
+	[
+		{
+			"name":"meta",
+			"checks":[
+				{
+					"funcName":"notEmpty",
+					"msg":"Error: Please enter the transaction purpose"
+				}
+			]
+		},
+		{
+			"name":"amount",
+			"checks":[
+				{
+					"funcName":"isNumber",
+					"msg":"Error: Please enter a decimal number"
+				}
+			]
+		}
+	]
+</div>
+
+<br/>
+
+<div id="definition" style="margin-bottom: 120px;">
+	<a>The <strong>buyer</strong> have to initialize the <strong>deal</strong> and make an offer to the <strong>seller</strong>.
+	</a>
+</div>
+
+<div id="button_menu" class="note" style="margin-left: 60px; margin-top: 80px;">
+
+	<form id="mForm">
+
+		<div class="alert" style="display: none" id="alert-meta-disp">
+			<a class="info">
+				<img src="./imgs/alert.png" width="30px">
+					<span id="alert-meta-text"></span>
+				</img>
+			</a>
+		</div>
+
+		<input type="text" placeholder="Object or service associated" name="meta"/>
+		<a>The object or service associated with the Deal</a></br></br>
+
+		<div class="alert" style="display: none" id="alert-amount-disp">
+			<a class="info">
+				<img src="./imgs/alert.png" width="30px">
+					<span id="alert-amount-text"></span>
+				</img>
+			</a>
+		</div>
+
+		<input type="text" placeholder="Amount of tokens" name="amount"/>
+		<a>The contract will be waiting for this amount coming from your public adress</a></br></br></br>
+
+		<div id="get_deal_color" onmouseover="blob('get_deal_color')" style="width:275px;">
+		<button id="submit" type="button" class="button"
+			onmouseover="color_over('button')"
+			onmouseleave="color_leave('button')"
+			onclick="onClick('newDeal2Content');">Next</button>
+		</div>
+	</form>
+
+</div>

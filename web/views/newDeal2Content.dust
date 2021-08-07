@@ -1,0 +1,109 @@
+<div id="validation" style="display:none">
+	[
+		{
+			"name":"buyer_address",
+			"checks":[
+				{
+					"funcName":"len",
+					"args":42,
+					"msg":"Error : The address should be made of 42 characters"
+				},
+				{
+					"funcName":"isAlphanumeric",
+					"msg":"Error : The address should be made of alphanumeric characters"
+				}
+			]
+		},
+		{
+			"name":"buyer_email",
+			"checks":[
+				{
+					"funcName":"isEmail",
+					"msg":"Error : Please enter a valid email for the Buyer"
+				}
+			]
+		},
+		{
+			"name":"seller_address",
+			"checks":[
+				{
+					"funcName":"len",
+					"args":42,
+					"msg":"Error : The address should be made of 42 characters"
+				},
+				{
+					"funcName":"isAlphanumeric",
+					"msg":"Error : The address should be made of alphanumeric characters"
+				}
+			]
+		},
+		{
+			"name":"seller_email",
+			"checks":[
+				{
+					"funcName":"isEmail",
+					"msg":"Error : Please enter a valid email for the Seller"
+				}
+			]
+		}
+	]
+</div>
+
+<div id="definition" style="margin-bottom: 80px;">
+	<a>Copy and paste is the way to go = ]</a>
+</div>
+
+<div id="button_menu" class="note" style="margin-left: 110px; margin-top: 50px;">
+	<form id="mForm">
+			<div class="alert" style="display:none" id="alert-buyer_address-disp">
+				<a class="info">
+					<img src="/imgs/alert.png" width="30px">
+						<span id="alert-buyer_address-text"></span>
+					</img>
+				</a>
+			</div>
+
+			<input type="text" style="width: 352px;" placeholder="Buyer public address" name="buyer_address"/>
+			<a>Copy and paste is the way to go &nbsp;= ]</a></br></br>
+
+			<div class="alert" style="display:none" id="alert-buyer_email-disp">
+				<a class="info">
+					<img src="/imgs/alert.png" width="30px">
+						<span id="alert-buyer_email-text"></span>
+					</img>
+				</a>
+			</div>
+
+			<input type="text" style="width: 352px;" placeholder="Buyer's email" name="buyer_email"/>
+			<a>Email of the Buyer</a></br></br>
+
+			<div class="alert" style="display:none" id="alert-seller_address-disp">
+				<a class="info">
+					<img src="/imgs/alert.png" width="30px">
+						<span id="alert-seller_address-text"></span>
+					</img>
+				</a>
+			</div>
+
+			<input type="text" style="width: 352px;" placeholder="Seller public address" name="seller_address"/>
+			<a>This is where the contract will send your paiement</a></br></br>
+
+			<div class="alert" style="display:none" id="alert-seller_email-disp">
+				<a class="info">
+					<img src="/imgs/alert.png" width="30px">
+						<span id="alert-seller_email-text"></span>
+					</img>
+				</a>
+			</div>
+
+			<input type="text" style="width: 352px;" placeholder="Seller's email" name="seller_email"/>
+			<a>Email of the Seller</a></br></br></br>
+
+			<div id="get_deal_color" onmouseover="blob('get_deal_color')" style="width:375px;">
+			<button id="submit" type="button" class="button" style="width: 375px;"
+				onmouseover="color_over('button')"
+				onmouseleave="color_leave('button')"
+				onclick="onClick('newDeal3Content');">Next</button>
+			</div>
+		</form>
+</div>
